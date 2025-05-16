@@ -1,0 +1,215 @@
+/* TransactionHistory.css */
+.transaction-history-container {
+  padding-top: 0;
+  margin-top: 0;
+  margin-left: 280px; /* Same as sidebar width */
+  margin-top: 70px; /* Same as header height */
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #494583;
+  color: white;
+  padding: 15px 20px;
+  font-size: 14px;
+  border-radius: 5px 5px 0 0;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.back-btn {
+  background-color: #ffc107;
+  color: #333;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.back-arrow {
+  margin-right: 5px;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.stat-box {
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px;
+  flex: 1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.stat-amount {
+  font-size: 18px;
+  margin: 0 0 5px 0;
+  font-weight: bold;
+  color: #0d6efd;
+}
+
+.stat-box:nth-child(1) .stat-amount,
+.stat-box:nth-child(2) .stat-amount {
+  color: #28a745;
+}
+
+.stat-box:nth-child(3) .stat-amount,
+.stat-box:nth-child(4) .stat-amount {
+  color: #dc3545;
+}
+
+.stat-label {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.filter-container {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.date-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.date-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 160px;
+}
+
+.date-field label {
+  font-size: 14px;
+  color: #333;
+}
+
+.date-field input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-btn {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 38px;
+  align-self: center;
+}
+
+.entries-selector {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  min-width: 160px;
+}
+
+.entries-selector select {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  min-width: 220px;
+}
+
+.search-box input {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 150px;
+}
+
+.table-container {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.transaction-table th {
+  background-color: white;
+  color: #333;
+  font-weight: bold;
+  border-top: 1px solid #ddd;
+}
+
+.transaction-table tr:hover {
+  background-color: #f5f7fa;
+}
+
+.no-data {
+  text-align: center;
+  padding: 20px !important;
+  color: #666;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px 0;
+}
+
+.page-btn {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  padding: 5px 15px;
+  margin: 0 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.page-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.page-btn:hover:not(:disabled) {
+  background-color: #e0e0e0;
+}

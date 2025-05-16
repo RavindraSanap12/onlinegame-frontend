@@ -1,0 +1,127 @@
+/* Reset body margin and padding to prevent scroll */
+
+.game-login-page-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.game-login-page-box {
+  background-color: #332d2d;
+  padding: 30px 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 100%;
+  max-width: 350px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.game-login-page-logo {
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+.game-login-page-title {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.game-login-page-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.game-login-page-input-wrapper {
+  position: relative;
+}
+
+.game-login-page-input {
+  width: 100%;
+  padding: 10px 40px 10px 15px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.game-login-page-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #333;
+  font-size: 18px;
+}
+
+.game-login-page-button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.game-login-page-error {
+  color: #ff3333;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.game-login-page-button:hover {
+  background-color: #218838;
+}
+
+/* Responsive for small laptops and screens */
+@media screen and (max-width: 768px) {
+  .game-login-page-box {
+    padding: 25px 15px;
+  }
+
+  .game-login-page-title {
+    font-size: 22px;
+  }
+
+  .game-login-page-input {
+    font-size: 15px;
+    padding: 10px 35px 10px 12px;
+  }
+
+  .game-login-page-icon {
+    right: 12px;
+    font-size: 16px;
+  }
+
+  .game-login-page-button {
+    font-size: 15px;
+    padding: 9px;
+  }
+}
+
+.game-login-page-toggle {
+  color: #aaa;
+  margin-top: 15px;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.game-login-page-toggle:hover {
+  color: #fff;
+}

@@ -1,0 +1,278 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+}
+
+/* Main Container */
+.market-management {
+  padding: 20px;
+  min-height: 100vh;
+  margin-left: 280px; /* Same as sidebar width */
+  margin-top: 70px; /* Same as sidebar width */
+  display: flex;
+  justify-content: center;
+}
+
+.panel-container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  gap: 20px;
+}
+
+/* Panel Styling */
+.panel {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.panel-header {
+  background-color: #3c3e72;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.panel-content {
+  padding: 20px;
+}
+
+/* Form Styling */
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.required {
+  color: #ff0000;
+}
+
+.form-control {
+  height: 38px;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #3c3e72;
+}
+
+.disabled {
+  background-color: #f9f9f9;
+}
+
+/* Time Input Styling */
+.time-input {
+  position: relative;
+}
+
+.time-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #777;
+}
+
+/* Weekly Settings */
+.weekly-setting {
+  margin: 20px 0;
+}
+
+.weekly-setting h3 {
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.days-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.day-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Time Settings */
+.time-setting {
+  margin: 20px 0;
+}
+
+.time-setting h3 {
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.time-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.time-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Toggle Switch Styling */
+.toggle-switch {
+  width: 40px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggle-switch.active {
+  background-color: #4caf50;
+}
+
+.toggle-slider {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.toggle-switch.active .toggle-slider {
+  transform: translateX(20px);
+}
+
+/* Table Toggle - Smaller Size */
+.table-toggle {
+  width: 36px;
+  height: 18px;
+}
+
+.table-toggle .toggle-slider {
+  width: 14px;
+  height: 14px;
+}
+
+.table-toggle.active .toggle-slider {
+  transform: translateX(18px);
+}
+
+/* Button Styling */
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn {
+  height: 36px;
+  padding: 0 15px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: opacity 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.save-btn {
+  background-color: #17a2b8;
+}
+
+.cancel-btn {
+  background-color: #dc3545;
+}
+
+.btn-icon {
+  margin-right: 5px;
+}
+
+/* Table Styling */
+.table-container {
+  overflow-x: auto;
+  font-size: 14px; /* Match form font size */
+}
+
+.market-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.market-table th {
+  background-color: #f9f9f9;
+  color: #333;
+  font-weight: normal;
+  text-align: left;
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px; /* Match form font size */
+}
+
+.market-table td {
+  padding: 10px 15px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px; /* Match form font size */
+}
+
+.market-table tr:hover {
+  background-color: #f5f5f5;
+}
+
+.id-column {
+  color: #007bff;
+  font-size: 14px; /* Match form font size */
+}
+
+/* Edit Button */
+.edit-btn {
+  width: 32px;
+  height: 32px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 14px; /* Match form font size */
+}

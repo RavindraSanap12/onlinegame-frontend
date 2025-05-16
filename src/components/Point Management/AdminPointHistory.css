@@ -1,0 +1,145 @@
+.admin-point-history {
+  font-family: Arial, sans-serif;
+  margin-left: 280px; /* Same as sidebar width */
+  margin-top: 70px; /* Same as header height */
+  padding: 20px; /* Add padding inside the container */
+  max-width: 1200px; /* Optional: Set a max-width for better readability */
+  margin-right: auto; /* Center the container */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4a4a7d;
+  color: white;
+  padding: 15px 20px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.total {
+  font-size: 16px;
+  font-weight: 500;
+  color: #4dff4d;
+}
+
+.filter-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: white;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.date-filter {
+  display: flex;
+  gap: 20px;
+}
+
+.filter-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.filter-item label {
+  font-size: 14px;
+  color: #333;
+}
+
+.filter-item input {
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.user-filter {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.user-select {
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  min-width: 200px;
+}
+
+.search-button {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.search-button:hover {
+  background-color: #0069d9;
+}
+
+.table-container {
+  overflow-x: auto;
+  background-color: white;
+  padding: 0 20px 20px;
+}
+
+.point-history-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.point-history-table th {
+  background-color: white;
+  color: #333;
+  text-align: left;
+  padding: 12px 15px;
+  border-bottom: 2px solid #e0e0e0;
+  font-weight: 600;
+}
+
+.point-history-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.no-data {
+  text-align: center;
+  color: #666;
+  padding: 20px !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .filter-section {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .date-filter {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .user-filter {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-button {
+    width: 100%;
+  }
+}

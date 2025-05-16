@@ -1,0 +1,61 @@
+.running-game-list {
+    padding: 15px;
+  margin-left: 280px;
+  margin-top: 70px;
+  border-radius: 0;
+  box-shadow: none;
+  }
+  
+  .running-game-list-header {
+    background-color: #3f3364;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 15px 20px;
+    border-radius: 6px 6px 0 0;
+  }
+  
+  .running-game-list-content {
+    background-color: white;
+    border-radius: 0 0 6px 6px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    padding: 20px;
+    gap: 40px;
+    flex-wrap: wrap; /* makes it responsive instead of overflowing */
+    overflow: visible;
+  }
+  
+  .running-game-list-section {
+    flex: 1;
+    margin-bottom: 20px;
+  }
+  
+  .running-game-list-title {
+    color: #e54459;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .running-game-list-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .running-game-list-table th {
+    text-align: left;
+    font-weight: 600;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .running-game-list-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  

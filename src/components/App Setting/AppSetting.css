@@ -1,0 +1,264 @@
+/* Main container styling */
+.form-container {
+  font-family: Arial, sans-serif;
+  margin-left: 280px; /* Same as sidebar width */
+  margin-top: 70px; /* Same as header height */
+  padding: 20px; /* Add padding inside the container */
+  max-width: 1200px; /* Optional: Set a max-width for better readability */
+  margin-right: auto; /* Center the container */
+}
+
+/* Form section styling */
+.form-section {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.25rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Section header styling */
+.section-header {
+  background-color: #3c3e72;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Form body styling */
+.form-body {
+  padding: 1rem;
+}
+
+/* Form row styling */
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+/* Form group styling */
+.form-group {
+  width: 100%;
+  padding: 0 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Form label styling */
+.form-label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+/* Form input styling */
+.form-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  box-sizing: border-box;
+}
+
+/* Light gray background for some inputs */
+.light-gray-bg {
+  background-color: #f7fafc;
+}
+
+/* Select dropdown styling */
+.form-select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%234A5568'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  background-size: 1.5em 1.5em;
+}
+
+/* Time input container */
+.time-input {
+  position: relative;
+  width: 100%;
+}
+
+/* Clock icon positioning */
+.clock-icon {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #718096;
+  pointer-events: none;
+}
+
+/* Editor container styling */
+.editor-container {
+  border: 1px solid #cbd5e0;
+  border-radius: 0.25rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+/* Editor toolbar styling */
+.editor-toolbar {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 0.5rem;
+}
+
+/* Format group in toolbar */
+.format-group {
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+  border-right: 1px solid #e2e8f0;
+}
+
+/* Toolbar select dropdown */
+.toolbar-select {
+  display: flex;
+  align-items: center;
+  font-family: serif;
+  font-size: 1rem;
+}
+
+.normal-text {
+  margin: 0 0.25rem;
+}
+
+/* Toolbar buttons container */
+.toolbar-buttons {
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
+  gap: 1rem;
+}
+
+/* Tool button styling */
+.tool-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+}
+
+/* Specific button styles */
+.bold-button {
+  font-weight: bold;
+}
+
+.italic-button {
+  font-style: italic;
+}
+
+.underline-button {
+  text-decoration: underline;
+}
+
+/* Editor content area */
+.editor-content {
+  padding: 0.5rem;
+  min-height: 5rem;
+}
+
+/* Withdrawal text input styling */
+.withdrawal-text-input {
+  width: 100%;
+  color: #2c5282;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  font-size: 0.875rem;
+}
+
+/* Submit button styling */
+.submit-button {
+  background-color: #48bb78;
+  color: white;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #38a169;
+}
+
+/* Form focus states */
+.form-input:focus,
+.form-select:focus,
+.withdrawal-text-input:focus {
+  outline: none;
+  border-color: #4299e1;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.15);
+}
+
+/* Media queries for responsive layout */
+@media (min-width: 768px) {
+  .form-group-half {
+    width: 50%;
+  }
+
+  .form-group-quarter {
+    width: 25%;
+  }
+}
+
+/* For smaller screens */
+@media (max-width: 767px) {
+  .form-group {
+    margin-bottom: 0.75rem;
+  }
+
+  .section-header {
+    padding: 0.75rem;
+  }
+
+  .form-body {
+    padding: 0.75rem;
+  }
+}
+
+.withdrawal-form-label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  margin-left: -8px;
+}
+
+/* Text type select styling */
+.text-type-select {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  background-color: #ffffff;
+  margin-right: 0.5rem;
+}
+
+/* Textarea styling for withdrawal content */
+.withdrawal-text-input {
+  width: 100%;
+  min-height: 100px;
+  padding: 0.75rem;
+  border: none;
+  font-size: 0.875rem;
+  resize: vertical;
+  background-color: transparent;
+}
+
+.withdrawal-text-input:focus {
+  outline: none;
+}

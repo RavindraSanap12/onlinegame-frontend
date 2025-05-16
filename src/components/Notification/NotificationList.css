@@ -1,0 +1,143 @@
+.notification-list-container {
+  background-color: white;
+  margin: 20px auto;
+  max-width: 1300px;
+  padding: 15px;
+  margin-left: 280px;
+  margin-top: 70px;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.notification-list-box {
+  background-color: #fff;
+  border-radius: 8px;
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.notification-list-header {
+  background-color: #3f3275;
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notification-list-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.notification-list-add-btn {
+  background-color: #28a745;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.notification-list-add-btn:hover {
+  background-color: #218838;
+}
+
+.notification-list-body {
+  padding: 20px;
+}
+
+.notification-list-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.notification-list-select,
+.notification-list-search-input {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.notification-list-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.notification-list-th,
+.notification-list-tbody td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.notification-list-thead {
+  background-color: #f5f5f5;
+}
+
+.notification-list-title-cell {
+  color: #28a745;
+  font-weight: 500;
+}
+
+.notification-list-btn-edit,
+.notification-list-btn-remove {
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border: none;
+}
+
+.notification-list-btn-edit {
+  background-color: #ffc107;
+  color: #000;
+  margin-right: 8px;
+}
+
+.notification-list-btn-edit:hover {
+  background-color: #e0a800;
+}
+
+.notification-list-btn-remove {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.notification-list-btn-remove:hover {
+  background-color: #c82333;
+}
+
+.notification-list-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.notification-list-entries-count {
+  font-size: 14px;
+}
+
+.notification-list-pagination {
+  display: flex;
+  gap: 5px;
+}
+
+.notification-list-pagination-btn {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.notification-list-pagination-btn.active {
+  background-color: #e2e2e2;
+  font-weight: bold;
+}

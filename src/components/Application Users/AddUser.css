@@ -1,0 +1,128 @@
+/* AddUser.css */
+
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+}
+
+/* Container for the entire component */
+.add-user-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-left: 280px; /* Same as sidebar width */
+  margin-top: 70px; /* Same as header height */
+}
+
+/* Panel styling */
+.panel {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+}
+
+.panel-header {
+  background-color: #3c3e72;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.panel-content {
+  padding: 20px;
+}
+
+/* Form styling */
+.user-form {
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px; /* Negative margin to counteract padding of form-group */
+}
+
+.form-group {
+  flex: 1 0 250px; /* Allow form-groups to grow but ensure they're at least 250px */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+.required {
+  color: #e53935;
+}
+
+.form-control {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  height: 40px;
+}
+
+.form-control:focus {
+  border-color: #3c3e72;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(60, 62, 114, 0.1);
+}
+
+/* Button group */
+.button-group {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end; /* Aligns the button with the bottom of other form elements */
+}
+
+.save-button {
+  background-color: #00b0b0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 20px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.save-button:hover {
+  background-color: #00a0a0;
+}
+
+.icon-save {
+  font-size: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .add-user-container {
+    margin-left: 0;
+    margin-top: 60px;
+  }
+
+  .form-group {
+    flex: 1 0 100%; /* On smaller screens, make form groups take full width */
+  }
+}

@@ -1,0 +1,64 @@
+.game-market-settings-container {
+  padding: 20px;
+  background-color: #f1f7f9;
+  font-family: Arial, sans-serif;
+  margin-left: 280px;
+  margin-top: 70px;
+}
+
+/* display: flex;
+  padding: 20px;
+  background-color: #e9f1f5;
+  gap: 20px;
+ 
+  max-width: 1300px;
+  padding: 15px;
+  margin-left: 280px;
+  margin-top: 70px;
+} */
+
+.game-market-settings-section {
+  background-color: white;
+  border-top: 10px solid #3c3c6a;
+  margin-bottom: 20px;
+  padding: 15px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.game-market-settings-title {
+  background-color: #3c3c6a;
+  color: white;
+  padding: 10px;
+  margin: -15px -15px 15px -15px;
+  font-size: 20px;
+}
+
+.game-market-settings-header,
+.game-market-settings-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.game-market-settings-header div {
+  font-weight: bold;
+}
+
+.game-market-settings-row input {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.game-market-settings-update-button {
+  background-color: #20c997;
+  border: none;
+  padding: 8px 18px;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}

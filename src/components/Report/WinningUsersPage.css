@@ -1,0 +1,243 @@
+/* Overall page style */
+.winning-users-page {
+    background-color: white;
+    margin: 20px auto;
+    max-width: 1300px;
+    padding: 15px;
+    margin-left: 280px;
+    margin-top: 70px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  
+  /* Section Titles */
+  .winning-users-page .winning-users-section-title {
+    background-color: #372c72;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 16px;
+    margin: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  /* Filter box */
+  .winning-users-page .winning-users-filter-container {
+    background-color: white;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  /* Filters */
+  .winning-users-page .winning-users-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px;
+    background-color: #fff;
+  }
+  
+  .winning-users-page .winning-users-filter-item {
+    flex: 1 1 180px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .winning-users-page .winning-users-filter-item label {
+    font-size: 13px;
+    margin-bottom: 4px;
+    color: #333;
+  }
+  
+  .winning-users-page .winning-users-filter-item select,
+  .winning-users-page .winning-users-filter-item input[type="date"] {
+    padding: 6px 10px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .winning-users-page .winning-users-filter-item .search-button {
+    align-self: flex-end;
+  }
+  
+  .winning-users-page .winning-users-filter-item .search-button button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 7px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Win Amount box */
+  .winning-users-page .winning-users-win-amount-box {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .winning-users-page .winning-users-win-amount-box h2 {
+    background-color: #372c72;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 16px;
+    margin: -20px -20px 12px -20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+  }
+  
+  .winning-users-page .winning-users-amount {
+    font-size: 24px;
+    font-weight: bold;
+    color: #009688;
+    margin-top: 5px;
+  }
+  
+  /* Results section */
+  .winning-users-page .winning-users-results-section {
+    background-color: white;
+    border-radius: 5px;
+    padding: 0;
+    border: 1px solid #ccc;
+  }
+  
+  .winning-users-page .winning-users-table-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+  }
+  
+  .winning-users-page .winning-users-table-controls label {
+    font-size: 14px;
+  }
+  
+  .winning-users-page .winning-users-table-controls select {
+    margin: 0 6px;
+    padding: 4px 8px;
+    font-size: 13px;
+  }
+  
+  .winning-users-page .winning-users-table-controls input[type="text"] {
+    padding: 5px 8px;
+    font-size: 13px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+  }
+  
+  /* Table styles */
+  .winning-users-page table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .winning-users-page table th,
+  .winning-users-page table td {
+    padding: 10px 12px;
+    font-size: 13px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .winning-users-page table th {
+    background-color: #e6e6e6;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .winning-users-page .winning-users-no-data {
+    text-align: center;
+    color: #777;
+    padding: 20px;
+  }
+  
+  /* Pagination */
+  .winning-users-page .winning-users-pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    padding: 12px 16px;
+    color: #555;
+  }
+  
+  .winning-users-page .winning-users-pagination span {
+    cursor: default;
+  }
+  .winning-users-filter-item {
+    align-self: flex-end;
+  }
+  
+  .winning-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    font-size: 14px;
+    width: 90px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .winning-btn:hover {
+    background-color: #43a047;
+  }
+  
+  .winning-user-page-con{
+    display: flex;
+  }
+ 
+  
+ .winning-users-win-amount-box{
+    width: 250px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+   
+    margin-left: 10px;
+ }
+ .winning-entries {
+    display: flex;
+    justify-content: space-between; /* Aligns the child divs to the left and right */
+    align-items: center; /* Vertically center the items */
+    margin-bottom: 20px; /* Optional: Adds space below the container */
+  }
+  
+  .winning-users-table-controls {
+    display: flex;
+    align-items: center;
+  }
+  
+  .winning-users-table-controls select {
+    margin-left: 5px; 
+  }
+  
+  .winning-search-bar input {
+    padding: 8px 12px;
+    font-size: 14px;
+    width: 200px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    margin-right: 10px;
+  }
+  .winning-users-table-controls label {
+    display: flex;
+    align-items: center;
+    gap: 6px; /* space between elements */
+    font-size: 16px;
+  }
+  
+  .winning-users-table-controls select {
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  

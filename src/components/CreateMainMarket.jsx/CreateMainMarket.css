@@ -1,0 +1,143 @@
+.create-main-market-container {
+    display: flex;
+    padding: 20px;
+    background-color: #e9f1f5;
+    gap: 20px;
+   
+    max-width: 1300px;
+    padding: 15px;
+    margin-left: 280px;
+    margin-top: 70px;
+}
+  
+  .create-main-market-form {
+    /* flex: 1; */
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  .create-main-market-header {
+    background-color: #3c347f;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px 4px 0 0;
+    margin: -20px -20px 20px -20px;
+  }
+  
+  .create-main-market-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .create-main-market-row {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .create-main-market-field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .create-main-market-field input,
+  .create-main-market-field select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .create-main-market-weekly {
+    margin-top: 20px;
+  }
+  
+  .create-main-market-days {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .create-main-market-day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .create-main-market-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .create-main-market-save {
+    background-color: #17a2b8;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .create-main-market-cancel {
+    background-color: #dc3545;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .create-main-market-form {
+    height: 100%;
+  }
+  
+  
+  .create-main-market-list {
+    flex: 1;
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  .create-main-market-list-header {
+    background-color: #3c347f;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px 4px 0 0;
+    margin: -20px -20px 20px -20px;
+  }
+  
+  .create-main-market-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .create-main-market-table th,
+  .create-main-market-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .create-main-market-edit {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .toggle-btn {
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(218, 213, 213);
+  }
+ 

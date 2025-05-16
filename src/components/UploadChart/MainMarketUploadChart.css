@@ -1,0 +1,75 @@
+.main-market-data-container {
+    background-color: white;
+    margin: 20px auto;
+    max-width: 1000px;
+    padding: 15px;
+    margin-left: 280px;
+    margin-top: 70px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  
+  .main-market-data-header {
+    background-color: #3c3c6a;
+    color: white;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .main-market-data-body {
+    display: flex;
+    flex-direction: row; /* Make sure everything stays in one row */
+    align-items: flex-end; /* Align items to the bottom for uniformity */
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: nowrap; /* Prevent wrapping */
+  }
+  
+  .main-market-data-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main-market-data-label {
+    margin-bottom: 6px;
+    font-weight: bold;
+  }
+  
+  .main-market-data-select,
+  .main-market-data-file {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 220px;
+  }
+  
+  .main-market-data-upload-btn,
+  .main-market-data-download-btn {
+    height: 40px; /* Same height as inputs for alignment */
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    gap: 8px;
+  }
+  
+  .main-market-data-upload-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+  }
+  
+  .main-market-data-download-btn {
+    background-color: transparent;
+    color: #f0ad4e;
+    border: 2px solid #f0ad4e;
+  }
+  
+  .main-market-data-upload-btn i,
+  .main-market-data-download-btn i {
+    font-size: 14px;
+  }
+  

@@ -1,0 +1,313 @@
+/* ApplicationUsersList.css */
+
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f0f2f5;
+  }
+  
+  /* Container for the entire component */
+  .application-users-container {
+    padding-top: 0;
+    margin-top: 0;
+    margin-left: 280px; /* Same as sidebar width */
+    margin-top: 70px; /* Same as header height */
+    border-radius: 0;
+    box-shadow: none;
+  }
+  
+  /* Panel styling */
+  .users-panel {
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  
+  .users-panel-header {
+    background-color: #3c3e72;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .users-panel-content {
+    padding: 0;
+  }
+  
+  /* Add New button */
+  .add-new-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .add-new-button:hover {
+    background-color: #218838;
+  }
+  
+  /* Table controls */
+  .table-controls {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px;
+    align-items: center;
+  }
+  
+  .entries-control {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .entries-control select {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .search-control {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .search-control input {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
+  }
+  
+  /* Table container */
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  /* Users table */
+  .users-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  
+  .users-table th {
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    background-color: white;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .users-table td {
+    padding: 8px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .users-table tbody tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  /* Action cell styling */
+  .action-cell {
+    display: flex;
+    gap: 5px;
+    padding: 8px 15px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  /* Edit button */
+  .edit-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .edit-button:hover {
+    background-color: #0069d9;
+  }
+  
+  /* Action buttons in the table */
+  .action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 5px;
+  }
+  
+  .custom-rate-btn {
+    font-size: 12px;
+    padding: 4px 8px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    background-color: #28a745;
+    width: 90px;
+  }
+  
+  .custom-rate-btn:hover {
+    background-color: #218838;
+  }
+  
+  .custom-close-btn {
+    font-size: 12px;
+    padding: 4px 8px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    background-color: #ffc107;
+    width: 90px;
+  }
+  
+  .custom-close-btn:hover {
+    background-color: #e0a800;
+  }
+  
+  /* Toggle cell styling */
+  .toggle-cell {
+    text-align: center;
+  }
+  
+  /* Toggle switch styling */
+  .toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 42px;
+    height: 22px;
+  }
+  
+  .toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #28a745;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(20px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  /* Column widths */
+  .column-action {
+    width: 140px;
+  }
+  
+  .column-name {
+    width: 15%;
+  }
+  
+  .column-mobile {
+    width: 12%;
+  }
+  
+  .column-password {
+    width: 12%;
+  }
+  
+  .column-custom,
+  .column-status {
+    width: 8%;
+    text-align: center;
+  }
+  
+  .column-date {
+    width: 15%;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1200px) {
+    .action-buttons {
+      width: 90px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .panel-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .add-new-button {
+      align-self: flex-end;
+    }
+  
+    .table-controls {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .search-control {
+      width: 100%;
+    }
+  
+    .search-control input {
+      width: 100%;
+    }
+  }
+  

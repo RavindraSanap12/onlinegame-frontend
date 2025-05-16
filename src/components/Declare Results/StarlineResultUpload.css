@@ -1,0 +1,363 @@
+/* StarlineResultUpload.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.starline-upload-container {
+  padding: 15px;
+  margin-left: 280px;
+  margin-top: 70px;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.starline-upload-panel {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.starline-upload-panel-header {
+  padding: 15px 20px;
+  background-color: #3f3d6b;
+  color: white;
+}
+
+.starline-upload-panel-header h2 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.starline-upload-panel-body {
+  padding: 20px;
+}
+
+.starline-upload-form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.starline-upload-form-group {
+  flex: 1;
+  min-width: 200px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.starline-upload-form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.starline-upload-required {
+  color: red;
+}
+
+.starline-upload-form-group input,
+.starline-upload-form-group select {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.starline-upload-date-input {
+  position: relative;
+}
+
+.starline-upload-calendar-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.starline-upload-checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.starline-upload-checkbox-group input {
+  width: auto;
+  margin-right: 8px;
+}
+
+.starline-upload-button-group {
+  display: flex;
+  align-items: flex-end;
+}
+
+.starline-upload-view-winners {
+  display: flex;
+  align-items: center;
+  padding: 8px 15px;
+  background-color: #fff;
+  color: #4caf50;
+  border: 1px solid #4caf50;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.starline-upload-eye-icon {
+  margin-right: 5px;
+}
+
+.starline-upload-table-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.starline-upload-entries-control select {
+  margin: 0 5px;
+  padding: 4px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.starline-upload-search-control input {
+  margin-left: 5px;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.starline-upload-table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.starline-upload-result-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+}
+
+.starline-upload-result-table th,
+.starline-upload-result-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.starline-upload-result-table th {
+  background-color: #f9f9f9;
+}
+
+.starline-upload-sortable {
+  cursor: pointer;
+}
+
+.starline-upload-sort-icon {
+  margin-left: 5px;
+  font-size: 10px;
+}
+
+.starline-upload-no-data {
+  text-align: center;
+  padding: 15px !important;
+  color: #666;
+}
+
+.starline-upload-table-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.starline-upload-page-btn {
+  padding: 5px 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.starline-upload-page-btn:hover {
+  background-color: #f0f0f0;
+}
+
+/* Winner List Popup Styles */
+.winner-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.starline-upload-save-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin-right: 10px;
+}
+
+.starline-upload-save-btn:hover {
+  background-color: #45a049;
+}
+
+.starline-upload-save-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.starline-upload-success-message {
+  color: #4caf50;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.winner-popup {
+  background: white;
+  border-radius: 4px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+.winner-popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.winner-popup-header h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.winner-popup-close {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+}
+
+.winner-popup-content {
+  padding: 15px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.winner-popup-loading {
+  background-color: #e8f5e9;
+  color: #666;
+  padding: 15px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.winner-popup-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.winner-popup-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.winner-popup-nav-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #666;
+}
+
+.winner-popup-summary {
+  padding: 10px 0;
+  color: #f44336;
+  font-weight: 500;
+}
+
+.winner-popup-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+  border-top: 1px solid #f0f0f0;
+  gap: 10px;
+}
+
+.winner-popup-btn {
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  border: none;
+}
+
+.cancel-btn {
+  background-color: #6c757d;
+  color: white;
+}
+
+.declare-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1024px) {
+  .starline-upload-container {
+    margin-left: 0;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .starline-upload-form-row {
+    flex-direction: column;
+  }
+
+  .starline-upload-form-group {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .starline-upload-table-controls {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .starline-upload-table-footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

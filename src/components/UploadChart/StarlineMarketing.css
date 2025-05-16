@@ -1,0 +1,75 @@
+.starline-marketing-container {
+    background-color: white;
+    margin: 10px auto;
+    max-width: 1500px;
+    padding: 15px;
+    margin-left: 280px;
+    margin-top: 70px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  
+  .starline-marketing-header {
+    background-color: #3c3c6a;
+    color: white;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .starline-marketing-body {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: nowrap;
+  }
+  
+  .starline-marketing-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .starline-marketing-label {
+    margin-bottom: 6px;
+    font-weight: bold;
+  }
+  
+  .starline-marketing-select,
+  .starline-marketing-file {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 220px;
+  }
+  
+  .starline-marketing-upload-btn,
+  .starline-marketing-download-btn {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    gap: 8px;
+  }
+  
+  .starline-marketing-upload-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+  }
+  
+  .starline-marketing-download-btn {
+    background-color: transparent;
+    color: #f0ad4e;
+    border: 2px solid #f0ad4e;
+  }
+  
+  .starline-marketing-upload-btn i,
+  .starline-marketing-download-btn i {
+    font-size: 14px;
+  }
+  

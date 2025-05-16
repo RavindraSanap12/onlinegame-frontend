@@ -1,0 +1,91 @@
+.new-user-list-container {
+    background-color: white;
+    margin: 20px auto;
+    max-width: 1300px;
+    padding: 15px;
+    margin-left: 280px;
+    margin-top: 70px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  
+  .new-user-list-title {
+    background-color: #3c3679;
+    color: white;
+    padding: 15px;
+    margin-bottom: 0;
+    font-size: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .new-user-list-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: white;
+  }
+  
+  .new-user-list-show,
+  .new-user-list-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+  }
+  
+  .new-user-list-select,
+  .new-user-list-input {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .new-user-list-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+  }
+  
+  .new-user-list-table th,
+  .new-user-list-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  .new-user-list-table th {
+    background-color: #fafafa;
+  }
+  
+  .new-user-list-no-data {
+    text-align: center;
+    padding: 20px;
+    color: #a00;
+    font-weight: 500;
+  }
+  
+  .new-user-list-footer {
+    background-color: white;
+    padding: 15px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .new-user-list-pagination span {
+    margin: 0 10px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .sort-icon {
+    font-size: 10px;
+    margin-left: 4px;
+    color: #999;
+  }
+  

@@ -1,0 +1,80 @@
+.game-rate-list {
+    padding: 10px;
+    margin-left: 270px;
+    margin-top: 70px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  
+  /* This is the container for the boxes */
+  .game-rate-list-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two boxes per row */
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 0 6px 6px;
+    /* box-shadow: 0 0 8px rgba(0, 0, 0, 0.05); */
+  }
+  
+  
+  .game-rate-list-header {
+    background-color: #3f3364;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 15px 20px;
+    border-radius: 6px 6px 0 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .game-rate-list-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 0 6px 6px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .game-rate-list-section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px;
+  }
+  
+  .game-rate-list-title {
+    background-color: #ffe49f;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .game-rate-list-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .game-rate-list-table th,
+  .game-rate-list-table td {
+    text-align: left;
+    padding: 10px 8px;
+    font-size: 14px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .game-rate-list-table input {
+    width: 100%;
+    padding: 6px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+  }
+  

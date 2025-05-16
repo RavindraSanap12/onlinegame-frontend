@@ -1,0 +1,323 @@
+/* WithdrawalList.css */
+
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+}
+
+/* Container for the entire component */
+.withdrawal-list-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  gap: 20px;
+  padding: 20px;
+  min-height: 100vh;
+  margin-left: 280px; /* Same as sidebar width */
+  margin-top: 70px; /* Same as sidebar width */
+  display: flex;
+  justify-content: center;
+}
+
+/* Top section with search and collection amount */
+.top-section {
+  display: flex;
+  gap: 20px;
+}
+
+/* Panel styling */
+.panel {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.panel-header {
+  background-color: #3c3e72;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.panel-content {
+  padding: 20px;
+}
+
+/* Search panel */
+.search-panel {
+  flex: 7;
+}
+
+/* Collection panel */
+.collection-panel {
+  flex: 3;
+}
+
+/* Date search container */
+.date-search-container {
+  display: flex;
+  gap: 15px;
+  align-items: flex-end;
+}
+
+.date-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.date-field label {
+  font-size: 14px;
+  color: #333;
+}
+
+.date-input {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  height: 38px;
+  width: 180px;
+}
+
+/* Search button */
+.search-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 20px;
+  height: 38px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.search-button:hover {
+  background-color: #0069d9;
+}
+
+/* Amount display */
+.amount-display {
+  font-size: 18px;
+  color: #28a745;
+  font-weight: bold;
+  text-align: left;
+  padding: 10px 0;
+}
+
+/* Withdrawal panel */
+.withdrawal-panel {
+  width: 100%;
+}
+
+/* Table controls */
+.table-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.entries-control {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.entries-control select {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.search-control {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.search-control input {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 200px;
+}
+
+/* Table container */
+.table-container {
+  overflow-x: auto;
+}
+
+/* Withdrawal table */
+.withdrawal-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.withdrawal-table th,
+.withdrawal-table td {
+  padding: 10px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.withdrawal-table th {
+  background-color: #f9f9f9;
+  font-weight: 600;
+  color: #333;
+}
+
+.withdrawal-table th:after {
+  content: "⇅";
+  margin-left: 5px;
+  color: #aaa;
+  font-size: 12px;
+}
+
+.withdrawal-table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+.no-data-row td {
+  text-align: center;
+  padding: 15px;
+  color: #666;
+}
+
+/* Table footer */
+.table-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  gap: 5px;
+}
+
+.pagination-button {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.pagination-button:hover:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.pagination-button:disabled {
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Column widths */
+.column-hash {
+  width: 5%;
+}
+
+.column-date {
+  width: 12%;
+}
+
+.column-name {
+  width: 15%;
+}
+
+.column-amount {
+  width: 10%;
+}
+
+.column-ref {
+  width: 12%;
+}
+
+.column-narration {
+  width: 20%;
+}
+
+.column-status {
+  width: 10%;
+}
+
+.column-action {
+  width: 10%;
+}
+/* Add these styles to your existing CSS file */
+
+.approve-button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.approve-button:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+.approve-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.reject-button {
+  background-color: #f44336; /* Red */
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.reject-button:hover:not(:disabled) {
+  background-color: #d32f2f;
+}
+
+.reject-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Loading and error message styles */
+.loading-message,
+.error-message {
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+}
+
+.error-message {
+  color: #f44336;
+}

@@ -1,0 +1,83 @@
+.bid-analysis-container {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    padding: 15px;
+    margin-left: 280px;
+    margin-top: 70px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  
+  .bid-analysis-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .bid-analysis-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .bid-analysis-total {
+    font-size: 18px;
+    color: #000;
+    
+  }
+  
+  .bid-analysis-total-count {
+    color: red;
+    font-weight: bold;
+    
+  }
+  
+  .bid-analysis-filters {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .bid-analysis-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .bid-analysis-label {
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .bid-analysis-input,
+  .bid-analysis-select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    width: 220px;
+  }
+  
+  .bid-analysis-search-btn-wrapper {
+    margin-top: 24px;
+  }
+  
+  .bid-analysis-search-btn {
+    padding: 10px 24px;
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .bid-analysis-search-btn:hover {
+    background-color: #218838;
+  }
+  

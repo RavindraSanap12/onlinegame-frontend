@@ -1,0 +1,162 @@
+/* Banners Management System Styles */
+.banners-management-container {
+  background-color: white;
+  padding: 20px;
+  max-width: 1300px;
+  margin-left: 280px;
+  margin-top: 70px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.banners-management-header {
+  background: #3f3a6b;
+  color: white;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.banners-management-title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.banners-management-add-btn {
+  background-color: #28a745;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.banners-management-add-btn:hover {
+  background-color: #28a745;
+}
+
+.banners-management-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.banners-management-entries {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.banners-management-label {
+  font-size: 14px;
+  color: #555;
+}
+
+.banners-management-select {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.banners-management-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.banners-management-search-input {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.banners-management-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.banners-management-thead {
+  background-color: #f8f9fa;
+}
+
+.banners-management-th {
+  padding: 12px 15px;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.banners-management-tbody tr {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.banners-management-td {
+  padding: 12px 15px;
+  vertical-align: middle;
+}
+
+.banners-management-img {
+  max-width: 100px;
+  max-height: 50px;
+  display: block;
+}
+
+.banners-management-delete-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.banners-management-delete-btn:hover:not(:disabled) {
+  background-color: #c82333;
+}
+
+.banners-management-delete-btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.banners-management-no-data {
+  text-align: center;
+  padding: 20px;
+  color: #6c757d;
+}
+
+.banners-management-pagination {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.banners-management-pagination-btn {
+  padding: 6px 12px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.banners-management-pagination-btn:hover {
+  background-color: #e9ecef;
+}
+
+.banners-management-sort-arrow {
+  margin-left: 5px;
+  color: #6c757d;
+  font-size: 12px;
+}

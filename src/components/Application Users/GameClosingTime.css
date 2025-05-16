@@ -1,0 +1,98 @@
+/* GameClosingTime.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.game-closing-time-container {
+  margin-left: 280px;
+  margin-top: 70px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+}
+
+.game-closing-time-header {
+  background-color: #494681;
+  color: white;
+  padding: 15px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 4px 4px 0 0;
+}
+
+.game-closing-time-table-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.game-closing-time-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.game-closing-time-thead th {
+  padding: 12px 15px;
+  text-align: left;
+  background-color: #f0f0f0;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.game-closing-time-tbody td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.game-closing-time-game-name {
+  color: #2a6496;
+  font-weight: bold;
+}
+
+.game-closing-time-time-cell {
+  color: #c73e3e;
+  font-weight: bold;
+}
+
+.game-closing-time-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.game-closing-time-tr:hover {
+  background-color: #f9f9f9;
+}
+
+.game-closing-time-update-button-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.game-closing-time-update-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s;
+}
+
+.game-closing-time-update-button:hover {
+  background-color: #218838;
+}
+
+.game-closing-time-update-button i {
+  font-size: 14px;
+}

@@ -1,0 +1,88 @@
+.member-analysis-container {
+    background-color: white;
+    margin: 20px auto;
+    max-width: 1300px;
+    padding: 15px;
+    margin-left: 280px;
+    margin-top: 70px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  
+  .member-analysis-header {
+    background-color: #2d2366;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .member-analysis-header h2 {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  .member-analysis-search {
+    font-size: 12px;
+  }
+  
+  .member-analysis-search input {
+    padding: 3px 5px;
+    font-size: 12px;
+  }
+  
+  .member-analysis-table-wrapper {
+    overflow-x: auto;
+    margin-top: 10px;
+  }
+  
+  .member-analysis-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    font-size: 12px;
+  }
+  
+  .member-analysis-table th,
+  .member-analysis-table td {
+    border: 1px solid #ddd;
+    padding: 5px 8px;
+    text-align: left;
+    white-space: nowrap;
+  }
+  
+  .member-analysis-table thead {
+    background-color: #f0f0f0;
+    font-weight: 600;
+  }
+  
+  .member-analysis-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .member-analysis-footer {
+    margin-top: 5px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .pagination button {
+    padding: 3px 8px;
+    margin-left: 5px;
+    background-color: white;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  
+  .profit {
+    color: green;
+  }
+  
+  .loss {
+    color: red;
+  }
+  
