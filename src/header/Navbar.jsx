@@ -1,7 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 
-function Navbar({ userData }) {
+function Navbar() {
+  const [userData, setUserData] = useState(null);
+
+  useEffect(() => {
+    // Fetch user data from localStorage when component mounts
+    const storedUser = localStorage.getItem("user");
+    if (storedUser) {
+      try {
+        setUserData(JSON.parse(storedUser));
+      } catch (error) {
+        console.error("Error parsing user data:", error);
+        localStorage.removeItem("user");
+      }
+    }
+  }, []);
+
   // Default values if userData isn't available yet
   const userName = userData?.name || "Admin User";
   const avatarInitial = userName.charAt(0).toUpperCase();
@@ -20,9 +35,7 @@ function Navbar({ userData }) {
             <div className="user-avatar">{avatarInitial}</div>
             <div className="user-info">
               <span className="user-name">{userName}</span>
-              <span className="user-role">
-                Admin
-              </span>
+              <span className="user-role">Admin</span>
             </div>
           </div>
         </div>

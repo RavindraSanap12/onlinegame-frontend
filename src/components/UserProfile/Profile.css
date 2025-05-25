@@ -1,0 +1,94 @@
+/* Main Layout Styles */
+.main-wrapper {
+  min-height: 100vh;
+}
+
+.fullheight {
+  min-height: 100vh;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+.main-body {
+  padding-top: 56px;
+}
+
+.home-wraper {
+  padding-bottom: 60px;
+}
+
+/* Header Styles */
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+
+.bg-warning {
+  background-color: #ffc107 !important;
+}
+
+.fw-semibild {
+  font-weight: 600;
+}
+
+/* Form Styles */
+.dashdata {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.form-label {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.form-control {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+}
+
+.form-control:read-only {
+  background-color: #e9ecef;
+  opacity: 1;
+}
+
+/* Button Styles */
+.btn-warning {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: #212529;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+  border-color: #d39e00;
+}
+
+.btn-lg {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+}
+
+/* Wallet Styles */
+.wallet {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+  .dashdata {
+    padding-left: 15px !important;
+    padding-right: 15px;
+  }
+
+  .ps-sm-5 {
+    padding-left: 15px !important;
+  }
+}

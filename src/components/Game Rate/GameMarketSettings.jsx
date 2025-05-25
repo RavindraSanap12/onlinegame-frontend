@@ -9,6 +9,151 @@ const GameMarketSettings = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  // Default market data structure
+  const defaultMarkets = [
+    {
+      name: "Main Market",
+      gameConfigs: [
+        {
+          gameType: "Single Digits",
+          gameRate: 10,
+          minBid: 5,
+          maxBid: 1000000,
+        },
+        {
+          gameType: "Jodi Digit",
+          gameRate: 500,
+          minBid: 5,
+          maxBid: 1000000,
+        },
+        {
+          gameType: "Single Panna",
+          gameRate: 160,
+          minBid: 5,
+          maxBid: 1000000,
+        },
+        {
+          gameType: "Double Panna",
+          gameRate: 320,
+          minBid: 5,
+          maxBid: 1000000,
+        },
+        {
+          gameType: "Triple Panna",
+          gameRate: 900,
+          minBid: 5,
+          maxBid: 1000,
+        },
+        {
+          gameType: "Half Sangam",
+          gameRate: 6000,
+          minBid: 5,
+          maxBid: 1000,
+        },
+        {
+          gameType: "Full Sangam",
+          gameRate: 60000,
+          minBid: 5,
+          maxBid: 1000,
+        },
+      ],
+    },
+    {
+      name: "Delhi Market",
+      gameConfigs: [
+        {
+          gameType: "Single Digits",
+          gameRate: 10,
+          minBid: 5,
+          maxBid: 1000000,
+        },
+        {
+          gameType: "Jodi Digit",
+          gameRate: 500,
+          minBid: 5,
+          maxBid: 1000000,
+        },
+        {
+          gameType: "Single Panna",
+          gameRate: 160,
+          minBid: 5,
+          maxBid: 1000000,
+        },
+        {
+          gameType: "Double Panna",
+          gameRate: 320,
+          minBid: 5,
+          maxBid: 1000000,
+        },
+        {
+          gameType: "Triple Panna",
+          gameRate: 900,
+          minBid: 5,
+          maxBid: 1000,
+        },
+        {
+          gameType: "Half Sangam",
+          gameRate: 6000,
+          minBid: 5,
+          maxBid: 1000,
+        },
+        {
+          gameType: "Full Sangam",
+          gameRate: 60000,
+          minBid: 5,
+          maxBid: 1000,
+        },
+      ],
+    },
+    {
+      name: "Starline Market",
+      gameConfigs: [
+        {
+          gameType: "Single Digits",
+          gameRate: 10,
+          minBid: 5,
+          maxBid: 1000000,
+        },
+        {
+          gameType: "Jodi Digit",
+          gameRate: 500,
+          minBid: 5,
+          maxBid: 1000000,
+        },
+        {
+          gameType: "Single Panna",
+          gameRate: 160,
+          minBid: 5,
+          maxBid: 1000000,
+        },
+        {
+          gameType: "Double Panna",
+          gameRate: 320,
+          minBid: 5,
+          maxBid: 1000000,
+        },
+        {
+          gameType: "Triple Panna",
+          gameRate: 900,
+          minBid: 5,
+          maxBid: 1000,
+        },
+        {
+          gameType: "Half Sangam",
+          gameRate: 6000,
+          minBid: 5,
+          maxBid: 1000,
+        },
+        {
+          gameType: "Full Sangam",
+          gameRate: 60000,
+          minBid: 5,
+          maxBid: 1000,
+        },
+      ],
+    },
+  ];
+
   // Get authentication headers with token
   const getAuthHeaders = () => {
     const token = localStorage.getItem("authToken");
@@ -43,16 +188,21 @@ const GameMarketSettings = () => {
       });
 
       if (!response.ok) {
-        throw new Error("Failed to fetch game rates");
+        // If API fails, use default data
+        setMarkets(defaultMarkets);
+        setLoading(false);
+        return;
       }
 
       const data = await response.json();
-      setMarkets(data);
+      // If API returns empty data, use default data
+      setMarkets(data.length > 0 ? data : defaultMarkets);
       setLoading(false);
     } catch (err) {
-      handleApiError(err);
-      setError(err.message);
+      // On any error, use default data
+      setMarkets(defaultMarkets);
       setLoading(false);
+      console.error("Error fetching game rates, using default data:", err);
     }
   };
 
@@ -92,7 +242,7 @@ const GameMarketSettings = () => {
     <div className="game-market-settings-row" key={configIndex}>
       <div>{config.gameType}</div>
       <input
-        type="text"
+        type="number"
         value={config.gameRate}
         onChange={(e) =>
           handleInputChange(
@@ -104,14 +254,14 @@ const GameMarketSettings = () => {
         }
       />
       <input
-        type="text"
+        type="number"
         value={config.minBid}
         onChange={(e) =>
           handleInputChange(marketIndex, configIndex, "minBid", e.target.value)
         }
       />
       <input
-        type="text"
+        type="number"
         value={config.maxBid}
         onChange={(e) =>
           handleInputChange(marketIndex, configIndex, "maxBid", e.target.value)
@@ -122,10 +272,6 @@ const GameMarketSettings = () => {
 
   if (loading) {
     return <div className="game-market-settings-container">Loading...</div>;
-  }
-
-  if (error) {
-    return <div className="game-market-settings-container">Error: {error}</div>;
   }
 
   return (

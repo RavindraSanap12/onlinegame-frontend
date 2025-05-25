@@ -14,10 +14,6 @@ const Dashboard = () => {
   };
   return (
     <div className="dashboard-container">
-      <h2>Welcome Admin !</h2>
-      <h3>Good to see you again</h3>
-      {/* Top Cards */}
-
       <div className="top-cards">
         <div className="amount-card">
           <div className="icon-container blue">

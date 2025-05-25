@@ -1,9 +1,7 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import Sidebar from "./header/Sidebar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./header/Layout";
-import Navbar from "./header/Navbar";
-import LoginPage from "./header/LoginPage/LoginPage";
 import React, { useState, useEffect } from "react";
+import LoginPageUser from "./components/Login_And_Register/Loginpage";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -45,7 +43,6 @@ function App() {
     setUserData(null);
     localStorage.removeItem("authToken");
     localStorage.removeItem("user");
-    // Optional: Add API call to invalidate token on server
   };
 
   if (isLoading) {
@@ -55,17 +52,11 @@ function App() {
   return (
     <BrowserRouter>
       {!isLoggedIn ? (
-        <LoginPage onLogin={handleLogin} />
+        <LoginPageUser onLogin={handleLogin} />
       ) : (
-        <>
-          <Sidebar onLogout={handleLogout} />
-          <div className="main-content">
-            <Navbar userData={userData} onLogout={handleLogout} />
-            <Routes>
-              <Route path="/*" element={<Layout />} />
-            </Routes>
-          </div>
-        </>
+        <Routes>
+          <Route path="/*" element={<Layout />} />
+        </Routes>
       )}
     </BrowserRouter>
   );

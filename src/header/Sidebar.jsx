@@ -52,13 +52,18 @@ const Sidebar = ({ onLogout }) => {
 
     button.appendChild(circle);
   };
+  const handleLogout = () => {
+    localStorage.removeItem("authToken");
+    localStorage.removeItem("user");
+    navigate("/");
+  };
   const handleLogoutClick = () => {
     setShowLogoutConfirm(true);
   };
 
   const confirmLogout = () => {
     setShowLogoutConfirm(false);
-    onLogout();
+    handleLogout();
   };
 
   const cancelLogout = () => {
